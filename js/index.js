@@ -24,8 +24,9 @@ document.querySelector('.left-primary').addEventListener('click', () => {
 
 function updateSlidePosition() {
   promotionRow.style.transform = `translateX(-${
-    currentIndex * (100 / visibleSlides)
+    currentIndex * (100 / visibleSlides) + 4
   }%)`;
+  console.log(currentIndex * (100 / visibleSlides));
 }
 const promotionRow2 = document.querySelector('.sale-secondary');
 let currentIndex2 = 0;
@@ -50,6 +51,6 @@ document.querySelector('.left-secondary').addEventListener('click', () => {
 
 function updateSlidePosition2() {
   promotionRow2.style.transform = `translateX(-${
-    currentIndex2 * (100 / visibleSlides)
+    currentIndex2 * (100 / visibleSlides) + 4
   }%)`;
 }
