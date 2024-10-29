@@ -1,0 +1,248 @@
+.product {
+  padding-top: 1rem;
+}
+.product-wapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+.product-images {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 79px 1fr;
+  gap: 1rem;
+}
+.row__item {
+  display: grid;
+  grid-template-columns: 5.125rem 1fr;
+  gap: 1.5rem;
+}
+.product-images .main-image {
+  width: 100%;
+  max-width: 424px;
+  height: 418px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.thumbnail-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 74px);
+  gap: 0.75rem;
+}
+
+.thumbnail-list img {
+  cursor: pointer;
+  max-width: 79px;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.25rem;
+}
+
+.product-info {
+  flex: 2;
+  padding: 20px;
+}
+
+.product-info h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0d121c;
+  margin-bottom: 0.75rem;
+}
+
+.rating,
+.price,
+.discount-coupons,
+.shipping-info,
+.selection-options,
+.quantity-selector,
+.purchase-buttons,
+.footer-info {
+  margin-top: 1rem;
+}
+
+.rating {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating div {
+  display: flex;
+  align-items: center;
+}
+.price {
+  background: #f0f9ff;
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.price .old-price {
+  text-decoration: line-through;
+  color: #d2d6db;
+}
+
+.price .current-price {
+  font-size: 1.5rem;
+  color: #3864ff;
+  font-weight: 400;
+}
+
+.discount-details {
+  font-size: 0.875rem;
+  background: #2e90fa;
+  color: white;
+  font-weight: 200;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.discount-coupons h3,
+.shipping-info h3,
+.selection-options h3,
+.quantity-selector h3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4d5761;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.discount-coupons__list {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.coupon {
+  background-color: #f0f9ff;
+  width: 4.625rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+  color: #2e90fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.shipping-info p,
+.selection-options p {
+  font-size: 14px;
+  color: #0d121c;
+  margin-top: 5px;
+}
+
+.selection-options__list {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+.selection-options__list img {
+  width: 100%;
+  max-width: 1.5rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.selection-options button {
+  width: 100%;
+  min-width: 106px;
+  height: 31px;
+  padding: 5px 10px;
+  border: 1px solid #d2d6db;
+  background-color: #fff;
+  color: #9da4ae;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.selection-options button:hover {
+  border-color: #007bff;
+}
+
+.quantity-selector__list {
+  display: flex;
+  align-items: center;
+  height: 1.75rem;
+  width: fit-content;
+  border: 1px solid #d2d6db;
+  border-radius: 0.5rem;
+}
+.quantity-selector__list button {
+  width: 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+}
+.quantity-selector__list input {
+  text-align: center;
+  width: 2.3125rem;
+  font-size: 0.875rem;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0%;
+  border: none;
+  border-left: solid 1px #d2d6db;
+  border-right: solid 1px #d2d6db;
+}
+.qua ntity-selector input {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.purchase-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  gap: 1rem;
+}
+.purchase-buttons button {
+  width: 100%;
+  min-width: 10.75rem;
+  height: 2.5rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #3864ff;
+  border-radius: 0.5rem;
+}
+
+.purchase-buttons .add-to-cart {
+  background-color: #b2ddff;
+  color: #3864ff;
+}
+
+.purchase-buttons .buy-now {
+  background-color: #3864ff;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6875rem;
+  color: #4d5761;
+  margin-top: 20px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 10px;
+}

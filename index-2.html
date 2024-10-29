@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Shop</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-2.css">
+    <link rel="stylesheet" href="styles/shop-2.css">
+    <link rel="stylesheet" href="styles/describe-2.css">
+    <link rel="stylesheet" href="styles/review-2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="header-nav">
+                    <a href="index.html">Trở về trang chủ</a>
+                    <div>
+                        <a href="#">Kênh người bán</a>
+                        <a href="#">Đăng nhập / đăng kí</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-content ">
+                <div class="header-content__logo">
+                    <h5>Eric Shop</h5>
+                    <div class="header-content__logo__search-bar">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <img src="images/search-01.svg" alt="">
+                        <span>⌘K</span>
+                    </div>
+                </div>
+                <div class="header-content__event">
+                    <div>
+                        <img src="images/report.svg" alt="">
+                        <h5>Hỗ trợ</h5>
+                    </div>
+                    <div>
+                        <img src="images/notifications.svg" alt="">
+                        <h5>Thông báo</h5>
+                    </div>
+                    <div class="header-content__event__cart">
+                        <img src="images/shopping_cart.svg" alt="">
+                        <div>
+                            <span>9</span>
+                        </div>
+                    </div>
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="product container">
+            <div class="product-wapper ">
+                <div class="product-images">
+                    <div class="thumbnail-list">
+                        <img src="images/Frame 1948756024.png" alt="Thumbnail 2">
+                        <img src="images/Frame 1948756024.png" alt="Thumbnail 3">
+                        <img src="images/Frame 1948756024.png" alt="Thumbnail 1">
+                        <img src="images/Frame 1948756024.png" alt="Thumbnail 4">
+                        <img src="images/Frame 1948756024.png" alt="Thumbnail 4">
+                    </div>
+                    <img class="main-image" src="images/Frame 1948756023.png" alt="Main Product Image">
+                </div>
+                <div class="product-info">
+                    <h2>[Sỉ-Rẻ] Sữa Rửa Mặt Simple Mẫu Mới 150ml - Dịu Nhẹ Cho Da - HV104 [Lê-Sĩ]</h2>
+                    <dov class="rating">
+                        <div>
+                            <img src="images/star_purple500.svg" alt="">
+                            <img src="images/star_purple500.svg" alt="">
+                            <img src="images/star_purple500.svg" alt="">
+                            <img src="images/star_purple500.svg" alt="">
+                            <img src="images/star_purple500.svg" alt="">
+                        </div>
+                        <span>
+                            4.5 ∙ 5.2K Ratings | 18 Lượt đánh giá
+                        </span>
+                    </dov>
+
+                    <div class="price">
+                        <span class="old-price">436.000</span>
+                        <span class="current-price">200.000</span>
+                        <span class="discount-details">-10%</span>
+                    </div>
+
+                    <div class="discount-coupons row__item">
+                        <h3>Mã giảm giá của shop</h3>
+                        <div class="discount-coupons__list">
+                            <button class="coupon">Giảm 20%</button>
+                            <button class="coupon">Giảm 20%</button>
+                            <button class="coupon">Giảm 20%</button>
+                            <button class="coupon">Giảm 20%</button>
+                        </div>
+                    </div>
+
+                    <div class="shipping-info row__item">
+                        <h3>Vận chuyển</h3>
+                        <div>
+                            <p>Miễn phí vận chuyển</p>
+                            <p>Vận chuyển từ <span>Hà Nội</span> tới <span>Hồ Chí Minh</span></p>
+                            <p>Phí vận chuyển: 200.000</p>
+                        </div>
+                    </div>
+
+                    <div class="selection-options row__item">
+                        <h3>Lựa chọn</h3>
+                        <div class="selection-options__list">
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                            <button><img src="images/Frame 1948756024.png" alt="option"><span>#321654</span></button>
+                        </div>
+                    </div>
+
+                    <div class="quantity-selector row__item">
+                        <h3>Số lượng</h3>
+                        <div class="quantity-selector__list">
+                            <button onclick="decreaseQuantity()"><img src="images/removeDe.svg" alt=""></button>
+                            <input type="text" id="quantity" value="1" min="1">
+                            <button onclick="increaseQuantity()"><img src="images/_ButtonIn.svg" alt=""></button>
+                        </div>
+                    </div>
+
+                    <div class="purchase-buttons">
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                        <button class="buy-now" onclick="buyNow()">Mua ngay</button>
+                    </div>
+
+                    <div class="footer-info">
+                        <span>Trả hàng 15 ngày</span>
+                        <span>Eric đảm bảo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="shop container">
+            <div class="shop-wapper ">
+                <div class="shop-info">
+                    <img src="images/Frame 1948756595.png" alt="Shop Avatar" class="shop-avatar">
+                    <div class="shop-details">
+                        <h2>Shop đồ mỹ phẩm <span class="verified">✔</span></h2>
+                        <p>Trực tiếp 1 giờ trước</p>
+                        <button class="shop-button">Xem cửa hàng</button>
+                    </div>
+                </div>
+                <div class="promo-banners">
+                    <img src="images/f3947c0bcaf171d91ac032e2820bbb88.png_2200x2200q80.png_.png" alt="">
+                    <img src="images/37713475645bb0698c30715499fdef2d.png_2200x2200q80.png_.png" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="product-details container">
+            <div class="product-details-wapper">
+                <div>
+                    <h2>Chi tiết sản phẩm</h2>
+                    <div class="detail-row row__item">
+                        <span class="label">Danh Mục</span>
+                        <span class="value">Phí vận chuyển 200.000</span>
+                    </div>
+                    <div class="detail-row row__item">
+                        <span class="label">Kho</span>
+                        <span class="value">Sắc đẹp</span>
+                    </div>
+                    <div class="detail-row row__item">
+                        <span class="label">Kích cỡ sản phẩm</span>
+                        <span class="value">Size lớn</span>
+                    </div>
+                    <div class="detail-row row__item">
+                        <span class="label">Hạn sử dụng</span>
+                        <span class="value">36 tháng</span>
+                    </div>
+                    <hr>
+                    <div class="return-policy">
+                        <span>Trả hàng 15 ngày</span>
+                        <span>Eric đảm bảo</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>Mô tả sản phẩm</h2>
+                    <div class="product-decribe">
+                        <div>
+                            <h3>THÔNG TIN THƯƠNG HIỆU</h3>
+                            <p>Simple là thương hiệu dành cho da nhạy cảm được ưa chuộng số 1 ở thị trường UK, sản phẩm
+                                được
+                                bán hầu hết trong
+                                các hiệu thuốc, thành phần lành tính, là sản phẩm hoàn hảo nhất cho làn da nhạy cảm.</p>
+                        </div>
+                        <div>
+                            <h3>VỀ SẢN PHẨM</h3>
+                            <p>Bộ sản phẩm dưỡng da Simple là một quy trình dưỡng da hoàn chỉnh bao gồm các bước: Tẩy
+                                trang,
+                                sữa rửa mặt, toner,
+                                sữa dưỡng da. Phù hợp cho những bạn đang tìm kiếm cho mình các sản phẩm chăm sóc da
+                                nhưng
+                                không biết bắt đầu từ
+                                đâu. Tất cả sản phẩm đều đến từ thương hiệu Simple, phù hợp với mọi loại da, kể cả làn
+                                da
+                                nhạy cảm nhất.</p>
+                        </div>
+                        <div>
+                            <h3>THÀNH PHẦN</h3>
+                            <p>Các thành phần có trong các sản phẩm dưỡng da Simple đều dịu nhẹ, lành tính, an toàn cho
+                                da.
+                                Thân thiện với tự
+                                nhiên. Nói không với cồn, hương liệu, các thành phần có hại cho da.</p>
+
+                        </div>
+                        <div>
+                            <h3>CÔNG DỤNG</h3>
+                            <li>Tẩy trang Simple: nhẹ nhàng lấy đi makeup, kem chống nắng mà không gây
+                                căng, khô ráp cho
+                                da.</li>
+                            <li>Sữa rửa mặt Simple: Bước double cleansing giúp làm sạch bụi bẩn, dầu
+                                thừa còn xót lại sau
+                                bước tẩy trang.</li>
+                            <li>Toner: Cân bằng ẩm, se khít lỗ chân lông, là bước đệm hoàn hảo cho
+                                dưỡng chất dễ dàng thẩm
+                                thấu hơn.</li>
+                            <li>Sữa dưỡng: Bước khóa ẩm giúp da ẩm sâu, căng mướt. Làm sáng da nhẹ
+                                nhàng.</li>
+
+                        </div>
+                        <div>
+                            <h3>CÁCH DÙNG</h3>
+                            <h3>
+                                <ul>
+                                    <li><span>⚡ Tẩy trang Simple:</span>
+                                        <p>Thấm nước tẩy trang vào bông và tẩy nhẹ nhàng theo
+                                            chiều từ dưới lên
+                                            trên, từ trong ra ngoài.</p>
+                                    </li>
+
+                                    <li><span>⚡ Gel rửa mặt Simple:</span>
+                                        <p>Cho gel rửa mặt ra lòng bàn tay, tạo bọt, mát xa
+                                            trên mặt tầm 3-5
+                                            phút rồi rửa lại với nước.</p>
+                                    </li>
+
+                                    <li><span>⚡ Toner Simple:</span>
+                                        <p>Đổ toner ra tay, vỗ đều lên da cho tới khi toner thấm
+                                            hết.</p>
+                                    </li>
+
+                                    <li><span>⚡ Sữa dưỡng da Simple:</span>
+                                        <p>Chấm sữa dưỡng lên 5 vùng trên mặt và mát xa
+                                            đều.</p>
+                                    </li>
+
+                                </ul>
+                            </h3>
+                        </div>
+                        <div>
+                            <h3>PHÂN LOẠI</h3>
+                            <p>1. Combo 4 Simple bao gồm:</p>
+                            <ul>
+                                <li>- Tẩy trang Simple</li>
+                                <li>- Sữa rửa mặt Simple</li>
+                                <li>- Toner</li>
+                                <li>- Simple</li>
+                            </ul>
+                            <p>2. Combo 3 Simple bao gồm:</p>
+                            <ul>
+                                <li>- Tẩy trang Simple</li>
+                                <li>- Sữa rửa mặt Simple</li>
+                                <li>- Toner</li>
+                                <li>- Simple</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>LƯU Ý</h3>
+                            <p>Sữa dưỡng trong quá trình sử dụng sẽ có hơi nóng da lúc ban đầu nhưng khách hàng yên tâm
+                                đó là do tác dụng trong thành
+                                phần của sản phẩm, hoàn toàn an toàn khách nghen!
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Thông tin sản phẩm</h3>
+                            <p>Hạn sử dụng: 3 năm kể từ ngày sản xuất<br>
+                                Xuất xứ: Anh<br>
+                                Dung tích: Tẩy trang: 200ml, Sữa rửa mặt: 150ml, Toner: 200ml, Sữa dưỡng:
+                                125ml
+                            </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Hạn sử dụng: 3 năm kể từ ngày sản xuất</li>
+                                <li>Xuất xứ: Anh</li>
+                                <li>Dung tích:</li>
+                                <li><span>Tẩy trang: </span><span>200ml</span></li>
+                                <li><span>Sữa rửa mặt: </span><span>150ml</span></li>
+                                <li><span>Toner: </span><span>200ml</span></li>
+                                <li><span>Sữa dưỡng: </span><span>125ml</span></li>
+                                <li>#simple #taytrang #suaruamat #suaduong #toner #duongdatrongoi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="product-review container">
+            <div class="product-review-wapper">
+                <h2>Đánh giá sản phẩm</h2>
+                <div class="review-header">
+                    <div>
+                        <h3><span>4.9</span>&nbsp; trên 5</h3>
+                        <div class="star-rating">
+                            <img src="images/star_purple500.svg" alt="star">
+                            <img src="images/star_purple500.svg" alt="star">
+                            <img src="images/star_purple500.svg" alt="star">
+                            <img src="images/star_purple500.svg" alt="star">
+                            <img src="images/star_purple500.svg" alt="star">
+                        </div>
+                    </div>
+                    <div class="filter-options">
+                        <a href="#">Tất cả</a>
+                        <a href="#">5 Sao (288)</a>
+                        <a href="#">4 Sao (8)</a>
+                        <a href="#">3 Sao (8)</a>
+                        <a href="#">2 Sao (8)</a>
+                        <a href="#">1 Sao (8)</a>
+                    </div>
+                </div>
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="review-user-info">
+                            <img class="avatar" src="images/avt.png" alt="Avatar">
+                            <div>
+                                <h3>Kierra Dorwart</h3>
+                                <div class="star-rating">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                </div>
+                                <p>Tuyệt vời, tưởng chừng như đã ko thể mua được.
+                                    <br>Vì tại các shop Ironcap Barbershop
+                                    đã
+                                    không còn hay, may mắn thay vì đã
+                                    có shoppee ship hàng.
+                                    <br><br>Với sự kết hợp Lighthouse Pre-Styling giúp tóc tạo độ
+                                    phồng
+                                    tuyệt
+                                    vời cùng với Sáp vuốt tóc
+                                    Lighthouse 420 tạo nên nét bay bổng cho mái tóc đã vào nếp trước đó, thật sự không
+                                    có
+                                    điều gì để phải chê với sự kết hợp
+                                    các loại sản phẩm này.
+                                    <br><br>Ironcap Barbershop luôn mãi đỉnh từ thiết kế kiểu tóc
+                                    cho
+                                    đến
+                                    việc các sản phẩm dành cho tóc đi
+                                    kèm.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="review-item">
+                        <div class="review-user-info">
+                            <img class="avatar" src="images/avt.png" alt="Avatar">
+                            <div>
+                                <h3>Kierra Dorwart</h3>
+                                <div class="star-rating">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                </div>
+                                <p>Tuyệt vời, tưởng chừng như đã ko thể mua được.
+                                    <br>Vì tại các shop Ironcap Barbershop
+                                    đã
+                                    không còn hay, may mắn thay vì đã
+                                    có shoppee ship hàng.
+                                    <br><br>Với sự kết hợp Lighthouse Pre-Styling giúp tóc tạo độ
+                                    phồng
+                                    tuyệt
+                                    vời cùng với Sáp vuốt tóc
+                                    Lighthouse 420 tạo nên nét bay bổng cho mái tóc đã vào nếp trước đó, thật sự không
+                                    có
+                                    điều gì để phải chê với sự kết hợp
+                                    các loại sản phẩm này.
+                                    <br><br>Ironcap Barbershop luôn mãi đỉnh từ thiết kế kiểu tóc
+                                    cho
+                                    đến
+                                    việc các sản phẩm dành cho tóc đi
+                                    kèm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-user-info">
+                            <img class="avatar" src="images/avt.png" alt="Avatar">
+                            <div>
+                                <h3>Kierra Dorwart</h3>
+                                <div class="star-rating">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                    <img src="images/star_purple500.svg" alt="star">
+                                </div>
+                                <p>Tuyệt vời, tưởng chừng như đã ko thể mua được.
+                                    <br>Vì tại các shop Ironcap Barbershop
+                                    đã
+                                    không còn hay, may mắn thay vì đã
+                                    có shoppee ship hàng.
+                                    <br><br>Với sự kết hợp Lighthouse Pre-Styling giúp tóc tạo độ
+                                    phồng
+                                    tuyệt
+                                    vời cùng với Sáp vuốt tóc
+                                    Lighthouse 420 tạo nên nét bay bổng cho mái tóc đã vào nếp trước đó, thật sự không
+                                    có
+                                    điều gì để phải chê với sự kết hợp
+                                    các loại sản phẩm này.
+                                    <br><br>Ironcap Barbershop luôn mãi đỉnh từ thiết kế kiểu tóc
+                                    cho
+                                    đến
+                                    việc các sản phẩm dành cho tóc đi
+                                    kèm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="return-policy">
+                        <span>Trả hàng 15 ngày</span>
+                        <span>Eric đảm bảo</span>
+                    </div>
+                    <div class="review-bottom">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#">&lsaquo;</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">...</a>
+                            <a href="#">16</a>
+                            <a href="#">&rsaquo;</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="suggest">
+            <div class="container">
+                <div class="suggest-header">Gợi ý hôm nay</div>
+                <div class="suggest-row">
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                    <div class="product-card product-card--secondary">
+                        <img src="images/image 53.png" alt="Asus Zephyrus M16 2023">
+                        <div class="product-name">Asus Zephyrus M16 2023</div>
+                        <div class="product-price product-price--suggest">90.000.000 <span
+                                class="discount discount--suggest">-10%</span>
+                        </div>
+                        <a href="#" class="buy-promotion buy-promotion--suggest">Mua 2 giảm 20%</a>
+                    </div>
+                </div>
+                <div class="suggest-bottom">
+                    <button>
+                        <span>Xem thêm</span>
+                        <img src="images/Vector.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <p>About us</p>
+                        <p>Contact us</p>
+                        <p>Careers</p>
+                        <p>Press</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <p>Features</p>
+                        <p>Pricing</p>
+                        <p>News</p>
+                        <p>Help desk</p>
+                        <p>Support</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                </div>
+                <div class="footer-app">
+                    <h4>Download Our App</h4>
+                    <img src="images/App Store.png" alt="App Store" class="app-icon">
+                    <img src="images/Play Store.png" alt="Google Play" class="app-icon">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2024 Copyright, All Rights Reserved, Made by Seju_ui_ux with ❤️</p>
+                <div class="social-icons">
+                    <img src="images/logo-twitter.svg" alt="">
+                    <img src="images/logo-facebook.svg" alt="">
+                    <img src="images/logo-instagram.svg" alt="">
+                    <img src="images/logo-linkedin.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
