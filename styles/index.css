@@ -162,7 +162,9 @@ footer {
 .app-icon {
   display: block;
   margin: 10px 0;
-  width: 120px;
+  width: 100%;
+  max-width: 189px;
+  height: 60px;
   cursor: pointer;
 }
 
