@@ -3,7 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
 main {
   background-color: #f5f5f5;
 }
@@ -167,8 +169,7 @@ footer {
 hr {
   border: 0;
   height: 1px;
-  background-color: #333;
-  margin: 20px 0;
+  background-color: #f3f4f6;
 }
 
 .footer-bottom {
@@ -377,4 +378,24 @@ hr {
 }
 .suggest-bottom button:hover {
   background: #131b2c;
+}
+.panigation-arrow {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.panigation-arrow--left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.panigation-arrow--right {
+  right: 0;
+  transform: translate(50%, -50%);
 }

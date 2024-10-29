@@ -61,26 +61,7 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-.promotion-arrow {
-  z-index: 99;
-  position: absolute;
-  top: 50%;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-}
-.promotion-arrow--left {
-  left: 0;
-  transform: translate(-50%, -50%);
-}
-.promotion-arrow--right {
-  right: 0;
-  transform: translate(50%, -50%);
-}
+
 .sale-title {
   display: flex;
   align-items: center;

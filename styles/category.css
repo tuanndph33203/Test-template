@@ -7,13 +7,27 @@
   margin-bottom: 20px;
   font-weight: 600;
 }
+.category-content {
+  position: relative;
+  background: #fff;
+}
+.category-wapper {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
 .category-row {
+  position: relative;
   display: grid;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 8px;
   row-gap: 3rem;
   padding: 1.5rem;
-  background: #fff;
+
+  clip-path: inset(0 0 0 0);
 }
 @media screen and (max-width: 768px) {
   .category-row {
@@ -54,4 +68,9 @@
   font-size: 0.875rem;
   color: #4d5761;
   margin: 0;
+}
+.right-category,
+.left-category {
+  background: #d6d6d6;
+  transform: translate(0, -50%);
 }
