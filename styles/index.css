@@ -169,12 +169,14 @@ footer {
 }
 
 hr {
+  width: 100%;
   border: 0;
   height: 1px;
   background-color: #f3f4f6;
 }
 
 .footer-bottom {
+  margin-top: 0.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -290,6 +292,7 @@ hr {
   font-weight: bold;
   margin: 5px 0;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .product-price--suggest {
@@ -298,11 +301,11 @@ hr {
 .discount {
   color: #ffffff;
   background: #2e90fa;
-  padding: 2px;
   border-radius: 5px;
   font-size: 0.75rem;
   font-weight: 400;
-  margin-left: 5px;
+  text-align: center;
+  padding: 0.25rem;
 }
 .discount--suggest {
   color: #fff;
