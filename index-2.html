@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Shop</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index-2.css">
-    <link rel="stylesheet" href="styles/shop-2.css">
-    <link rel="stylesheet" href="styles/describe-2.css">
-    <link rel="stylesheet" href="styles/review-2.css">
 </head>
 
 <body>
     <header>
         <nav>
             <div class="container">
-                <div class="header-nav">
+                <div class="header-nav flex-space-between">
                     <a href="index.html">Trở về trang chủ</a>
                     <div>
                         <a href="#">Kênh người bán</a>
@@ -26,7 +23,7 @@
             </div>
         </nav>
         <div class="container">
-            <div class="header-content ">
+            <div class="header-content flex-space-between">
                 <div class="header-content__logo">
                     <h5>Eric Shop</h5>
                     <div class="header-content__logo__search-bar">
@@ -35,7 +32,7 @@
                         <span>⌘K</span>
                     </div>
                 </div>
-                <div class="header-content__event">
+                <div class="header-content__event flex-space-between">
                     <div>
                         <img src="images/report.svg" alt="image">
                         <h5>Hỗ trợ</h5>
@@ -46,7 +43,7 @@
                     </div>
                     <div class="header-content__event__cart">
                         <img src="images/shopping_cart.svg" alt="image">
-                        <div>
+                        <div class="flex-center">
                             <span>9</span>
                         </div>
                     </div>
@@ -127,9 +124,11 @@
                     <div class="quantity-selector row__item">
                         <h3>Số lượng</h3>
                         <div class="quantity-selector__list">
-                            <button onclick="decreaseQuantity()"><img src="images/removeDe.svg" alt="image"></button>
+                            <button class="flex-center" onclick="decreaseQuantity()"><img src="images/removeDe.svg"
+                                    alt="image"></button>
                             <input type="text" id="quantity" value="1" min="1">
-                            <button onclick="increaseQuantity()"><img src="images/_ButtonIn.svg" alt="image"></button>
+                            <button class="flex-center" onclick="increaseQuantity()"><img src="images/_ButtonIn.svg"
+                                    alt="image"></button>
                         </div>
                     </div>
 
@@ -441,7 +440,7 @@
                         <span>Trả hàng 15 ngày</span>
                         <span>Eric đảm bảo</span>
                     </div>
-                    <div class="review-bottom">
+                    <div class="review-bottom flex-center">
                         <div class="pagination">
                             <a href="#">&laquo;</a>
                             <a href="#">&lsaquo;</a>
@@ -665,7 +664,7 @@
                 </div>
             </div>
             <hr>
-            <div class="footer-bottom">
+            <div class="footer-bottom flex-space-between">
                 <p>© 2024 Copyright, All Rights Reserved, Made by Seju_ui_ux with ❤️</p>
                 <div class="social-icons">
                     <img src="images/logo-twitter.svg" alt="image">
@@ -676,7 +675,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
