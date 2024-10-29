@@ -199,14 +199,6 @@
   border-left: solid 1px #d2d6db;
   border-right: solid 1px #d2d6db;
 }
-.qua ntity-selector input {
-  width: 50px;
-  text-align: center;
-  padding: 5px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
 .purchase-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -220,6 +212,7 @@
   padding: 0.75rem;
   box-sizing: border-box;
   font-size: 0.875rem;
+  font-weight: 600;
   color: #fff;
   border: none;
   border-radius: 4px;

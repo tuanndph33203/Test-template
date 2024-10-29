@@ -20,16 +20,15 @@
   border-radius: 50%;
   margin-right: 15px;
 }
-
-.shop-details h2 {
-  font-size: 18px;
-  color: #333;
+.shop-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.shop-details .verified {
-  color: #3498db;
-  font-size: 16px;
-  vertical-align: middle;
+.shop-details h2 {
+  font-size: 1rem;
+  color: #0d121c;
 }
 
 .shop-details p {
@@ -39,12 +38,13 @@
 
 .shop-button {
   margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 6px 30.5px;
+  background-color: #ffffff;
+  border: 1px solid #f3f4f6;
+  color: #4d5761;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .promo-banners {
